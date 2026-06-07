@@ -2,7 +2,7 @@
 
 Portfolio personal construido con React + Vite. Deploy automático en GitHub Pages via GitHub Actions.
 
-🔗 **Live:** https://dallycita.github.io/portfolio/
+🔗 **Live:** https://dallycita.github.io/portafolio-web/
 
 ## Stack
 
