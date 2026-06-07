@@ -1,0 +1,158 @@
+.section {
+  padding: 6rem 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 0.5px solid var(--border);
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--light);
+  letter-spacing: 0.1em;
+}
+
+.heading {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.about p {
+  font-size: 14px;
+  color: var(--mid);
+  line-height: 1.85;
+  margin-bottom: 1rem;
+}
+
+.aboutTitle {
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  margin-bottom: 1.25rem;
+}
+
+.stats {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 1.75rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.statNum {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--charcoal);
+  line-height: 1;
+}
+
+.statLabel {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--light);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Contact card */
+.card {
+  background: var(--charcoal);
+  border-radius: 20px;
+  padding: 2.5rem;
+  color: #FAF8F5;
+}
+
+.cardTitle {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.cardSub {
+  font-size: 13px;
+  color: rgba(250,248,245,0.55);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.ghLink {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(255,255,255,0.07);
+  border: 0.5px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  color: #FAF8F5;
+  transition: background 0.2s;
+}
+
+.ghLink:hover {
+  background: rgba(255,255,255,0.13);
+}
+
+.ghIcon {
+  font-size: 20px;
+  opacity: 0.7;
+  flex-shrink: 0;
+}
+
+.ghText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ghLabel {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: rgba(250,248,245,0.45);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.ghValue {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.ghArrow {
+  margin-left: auto;
+  color: rgba(250,248,245,0.4);
+  font-size: 18px;
+  transition: transform 0.2s;
+}
+
+.ghLink:hover .ghArrow {
+  transform: translateX(3px);
+}
+
+@media (max-width: 768px) {
+  .section { padding: 4rem 1.5rem; }
+  .grid { grid-template-columns: 1fr; gap: 2rem; }
+}
