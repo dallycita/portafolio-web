@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import styles from './Architecture.module.css'
 
 const nodes = [
@@ -71,9 +71,8 @@ export default function Architecture() {
 
           <div className={styles.nodes}>
             {nodes.map((node, i) => (
-              <>
+              <React.Fragment key={node.label}>
                 <button
-                  key={node.label}
                   className={`${styles.node} ${active === i ? styles.nodeActive : ''}`}
                   onClick={() => setActive(i)}
                   aria-pressed={active === i}
@@ -84,13 +83,12 @@ export default function Architecture() {
                 </button>
                 {i < nodes.length - 1 && (
                   <span
-                    key={`arrow-${i}`}
                     className={`${styles.arrow} ${i < active ? styles.arrowLit : ''}`}
                   >
                     →
                   </span>
                 )}
-              </>
+              </React.Fragment>
             ))}
           </div>
 
